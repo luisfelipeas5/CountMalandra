@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Count Malandra</string>
+    <string name="vai_malandra_background">Image de plano de fundo</string>
+    <string name="counting">Contagem</string>
+    <string name="vai_malandra">Vai Malandra</string>
+    <string name="value">%d</string>
+</resources>

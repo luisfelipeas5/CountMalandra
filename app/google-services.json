@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "75152349933",
+    "firebase_url": "https://countmaladra.firebaseio.com",
+    "project_id": "countmaladra",
+    "storage_bucket": "countmaladra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75152349933:android:993b4114373db15d",
+        "android_client_info": {
+          "package_name": "br.com.madeinweb.labs.countmalandra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75152349933-mlf2ke1n61ek4n2parkn3rhmgc7o11uu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.madeinweb.labs.countmalandra",
+            "certificate_hash": "c804f41470e48e5328d9de9b74c62597252239c4"
+          }
+        },
+        {
+          "client_id": "75152349933-ltav9nm3si4mcjdmemd1o0k23pjqqfpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVbXgmTa_WAW8T8SihjeHSOd6DyAOoIhg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75152349933-ltav9nm3si4mcjdmemd1o0k23pjqqfpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
