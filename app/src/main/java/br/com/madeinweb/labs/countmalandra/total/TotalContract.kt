@@ -1,6 +1,7 @@
 package br.com.madeinweb.labs.countmalandra.total
 
 import br.com.madeinweb.labs.countmalandra.basearchitecture.BaseContract
+import io.reactivex.Observable
 import io.reactivex.Single
 
 interface TotalContract {
@@ -15,7 +16,7 @@ interface TotalContract {
     }
 
     interface DataManager {
-        fun getCount(): Single<Int>
+        fun getTotal(): Observable<Int>
     }
 
 }

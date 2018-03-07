@@ -3,6 +3,7 @@ package br.com.madeinweb.labs.countmalandra.total
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import br.com.madeinweb.labs.countmalandra.CountApplication
 import br.com.madeinweb.labs.countmalandra.R
 import br.com.madeinweb.labs.countmalandra.databinding.ActivityTotalBinding
@@ -42,7 +43,7 @@ class TotalActivity : AppCompatActivity(), TotalContract.View {
     }
 
     override fun onLoadCountFailed(throwable: Throwable) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Toast.makeText(this, throwable.message, Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
