@@ -3,6 +3,8 @@ package br.com.madeinweb.labs.countmalandra.total
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
+import android.view.View
 import android.widget.Toast
 import br.com.madeinweb.labs.countmalandra.CountApplication
 import br.com.madeinweb.labs.countmalandra.R
@@ -39,11 +41,23 @@ class TotalActivity : AppCompatActivity(), TotalContract.View {
     }
 
     override fun onCountReady(count: Int) {
-        mBinding?.tvCounter?.text = getString(R.string.value, count)
+        mBinding?.tvTotal?.text = getString(R.string.value, count)
+    }
+
+    override fun changeTotalColor(colorResource: Int) {
+        mBinding?.tvTotal?.setTextColor(ContextCompat.getColor(this, colorResource))
     }
 
     override fun onLoadCountFailed(throwable: Throwable) {
         Toast.makeText(this, throwable.message, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onLoadingTotal(loading: Boolean) {
+        var progressVisibility = View.GONE
+        if (loading) {
+            progressVisibility = View.VISIBLE
+        }
+        mBinding?.pbLoadingTotal?.visibility = progressVisibility
     }
 
     override fun onDestroy() {
